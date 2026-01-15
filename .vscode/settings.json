@@ -1,4 +1,4 @@
 {
-  "python.defaultInterpreterPath": "venv/bin/python",
+  "python.defaultInterpreterPath": "news-summarizer/venv/bin/python",
   "python.terminal.activateEnvironment": true
 }
