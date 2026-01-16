@@ -1,55 +1,95 @@
 # AI News Summarizer
 
-A Python project that fetches news articles and generates short summaries using NLP.
+A Python-based tool that retrieves news articles from external sources and produces short, meaningful summaries using NLP techniques.
 
 ---
 
 ## Features
-- Fetches news from RSS feeds or APIs
-- Extracts article text
-- Generates concise summaries using NLP
+
+* Fetches news from RSS feeds or APIs
+* Extracts and cleans article text
+* Generates concise, high-quality summaries using NLP
 
 ---
 
 ## Requirements
-- Python 3.10+
-- Virtual environment (recommended)
+
+* Python **3.10+**
+* A virtual environment is **highly recommended**
 
 ---
 
 ## Setup
 
-### 1. Clone the repository
+### 1. Clone the Repository
+
 ```bash
 git clone <repo-url>
 cd ai-news-summarizer
+```
 
-## From scratch
-Create virtual environment:
+---
+
+## From Scratch (Recommended)
+
+### 1. Create a Virtual Environment
+
+```bash
 python3 -m venv venv
+```
 
-Activate virtual environment:
+### 2. Activate the Virtual Environment
+
+```bash
 source venv/bin/activate
+```
 
-Verify if virtual environment is created:
-- Look for a venv folder in your project
-- Cmd+Shift+P
-- echo $VIRTUAL_ENV 
-- which python
-- Check pyvenv.cfg 
+### 3. Verify the Environment
 
-Install all the libraries from requirements.txt:
+You can confirm the virtual environment is active by checking:
+
+* The `venv/` folder exists
+* VS Code interpreter selection (`Cmd + Shift + P`)
+* Environment variables:
+
+  ```bash
+  echo $VIRTUAL_ENV
+  which python
+  ```
+* Config file:
+  `venv/pyvenv.cfg`
+
+---
+
+## Install Dependencies
+
+### Install from `requirements.txt`
+
+```bash
 python -m pip install -r requirements.txt
+```
 
-List the libraries:
+### View Installed Packages
+
+```bash
 pip list
+```
 
-create or update requirements.txt
-python -m pip freeze > requirements.txt -------overwrites
-python -m pip freeze >> requirements.txt --------appends
+### Update or Create `requirements.txt`
 
+```bash
+# Overwrite
+python -m pip freeze > requirements.txt
 
-Run code :
+# Append
+python -m pip freeze >> requirements.txt
+```
+
+---
+
+## Run the Project
+
+```bash
 python -m src.main
-
+```
 
